@@ -30,6 +30,12 @@
     "slug": {
       "type": "uid",
       "targetField": "city"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "place"
     }
   }
 }

@@ -53,6 +53,12 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "place": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::place.place",
+      "inversedBy": "reviews"
     }
   }
 }
